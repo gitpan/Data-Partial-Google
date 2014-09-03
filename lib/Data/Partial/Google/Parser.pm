@@ -1,5 +1,5 @@
 package Data::Partial::Google::Parser;
-our $VERSION = '0.00_01'; # VERSION
+our $VERSION = '0.01'; # VERSION
 our $AUTHORITY = 'cpan:ARODLAND'; # AUTHORITY
 use Marpa::R2;
 
@@ -14,8 +14,8 @@ Props    ::= Prop+ separator => [,] action => props
 Prop     ::= Object action => ::first bless => ::undef
            | Array  action => ::first bless => ::undef
 
-Object   ::= NAME              action => object
-           | NAME ('/') Object action => object
+Object   ::= NAME              action => leaf
+           | NAME ('/') Prop   action => object
 
 Array    ::= NAME ('(') Props (')') action => array
 
@@ -78,6 +78,10 @@ sub object {
 	[ $_[1], make_filter($props) ]
 }
 
+sub leaf {
+	[ $_[1], undef ]
+}
+
 sub array {
 	[ $_[1], make_filter($_[2]) ]
 }
@@ -96,7 +100,7 @@ Data::Partial::Google::Parser
 
 =head1 VERSION
 
-version 0.00_01
+version 0.01
 
 =head1 AUTHOR
 

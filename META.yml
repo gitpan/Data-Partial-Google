@@ -30,5 +30,5 @@ resources:
   homepage: http://metacpan.org/release/Data-Partial-Google
   license: http://dev.perl.org/licenses/
   repository: git://github.com/arodland/Data-Partial-Google.git
-version: 0.00_01
+version: '0.01'
 x_authority: cpan:ARODLAND
