@@ -1,6 +1,6 @@
 package Data::Partial::Google;
 # ABSTRACT: Filter data structures for "partial responses," Google style
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 our $AUTHORITY = 'cpan:ARODLAND'; # AUTHORITY
 use Moo;
 
@@ -60,7 +60,7 @@ Data::Partial::Google - Filter data structures for "partial responses," Google s
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -76,7 +76,7 @@ version 0.01
         ]
     };
 
-    my $filter = Data::Filter::Google->new('artist,title,tracks/title');
+    my $filter = Data::Partial::Google->new('artist,title,tracks/title');
     my $filtered = $filter->mask($data);
 
     cmp_deeply($data, {

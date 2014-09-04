@@ -1,3 +1,6 @@
+Version 0.02: 2014-09-03
+	* Correct the name of the module in the SYNOPSIS
+
 Version 0.01: 2014-09-03
 	* Improved examples and documentation.
 	* Optimized property access, 33% throughput increase in a simple benchmark.

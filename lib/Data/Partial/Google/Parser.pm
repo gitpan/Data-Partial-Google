@@ -1,5 +1,5 @@
 package Data::Partial::Google::Parser;
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 our $AUTHORITY = 'cpan:ARODLAND'; # AUTHORITY
 use Marpa::R2;
 
@@ -100,7 +100,7 @@ Data::Partial::Google::Parser
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

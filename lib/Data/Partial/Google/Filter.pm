@@ -1,5 +1,5 @@
 package Data::Partial::Google::Filter;
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 our $AUTHORITY = 'cpan:ARODLAND'; # AUTHORITY
 use Moo;
 use Scalar::Util 'reftype';
@@ -76,7 +76,7 @@ Data::Partial::Google::Filter
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 
